@@ -1,0 +1,177 @@
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/bb515311f9.js" crossorigin="anonymous"></script>
+
+<title>RideRevive | Checkout</title>
+<link rel="stylesheet" href="checkout.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<link rel="icon" type="image/x-icon" href="/images/logo.jpg">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/logo.jpg" class="logo" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-tabs mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active-s" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Account</a>
+                        <ul class="dropdown-menu">
+
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="signup.html">Signup</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item active-s" href="dashboard.html">Dashbaord</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="cart">
+                    <img src="images/shopping-cart.png" class="icon"  id="icon" onclick="func()" alt="" style="cursor: pointer;">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <div class="checkout-container">
+        <div class="left-side">
+            <div class="text-box">
+                <h1 class="home-heading">Modern Car Parts</h1>
+                <p class="home-price"><em>Reasonable</em> Prices</p>
+                <hr class="left-hr" />
+
+            </div>
+        </div>
+
+        <div class="right-side">
+            <div class="receipt">
+                <h2 class="receipt-heading">Receipt Summary</h2>
+                <div>
+                    <table class="table">
+                        <tr>
+                            <td>249.50 x 2 bumper kits</td>
+                            <td class="price">499.00 USD</td>
+                        </tr>
+                        <tr>
+                            <td>Discount</td>
+                            <td class="price">0.00 USD</td>
+                        </tr>
+                        <tr>
+                            <td>Subtotal</td>
+                            <td class="price">499.00 USD</td>
+                        </tr>
+                        <tr>
+                            <td>Tax</td>
+                            <td class="price">47.41 USD</td>
+                        </tr>
+                        <tr class="total">
+                            <td>Total</td>
+                            <td class="price">546.41 USD</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="payment-info">
+                <h3 class="payment-heading">Payment Information</h3>
+                <form class="form-box" enctype="text/plain" method="get" target="_blank">
+                    <div>
+                        <label for="full-name">Full Name</label>
+                        <input id="full-name" name="full-name" placeholder="Satoshi Nakamoto" required type="text" />
+                    </div>
+
+                    <div>
+                        <label for="credit-card-num">Card Number
+                            <span class="card-logos">
+                                <i class="card-logo fa-brands fa-cc-visa"></i>
+                                <i class="card-logo fa-brands fa-cc-amex"></i>
+                                <i class="card-logo fa-brands fa-cc-mastercard"></i>
+                                <i class="card-logo fa-brands fa-cc-discover"></i> </span></label>
+                        <input id="credit-card-num" name="credit-card-num" placeholder="1111-2222-3333-4444" required
+                            type="text" />
+                    </div>
+
+                    <div>
+                        <p class="expires">Expires on:</p>
+                        <div class="card-experation">
+                            <label for="expiration-month">Month</label>
+                            <select id="expiration-month" name="expiration-month" required>
+                                <option value="">Month:</option>
+                                <option value="">January</option>
+                                <option value="">February</option>
+                                <option value="">March</option>
+                                <option value="">April</option>
+                                <option value="">May</option>
+                                <option value="">June</option>
+                                <option value="">July</option>
+                                <option value="">August</option>
+                                <option value="">September</option>
+                                <option value="">October</option>
+                                <option value="">November</option>
+                                <option value="">Decemeber</option>
+                            </select>
+
+                            <label class="expiration-year">Year</label>
+                            <select id="experation-year" name="experation-year" required>
+                                <option value="">Year</option>
+                                <option value="">2023</option>
+                                <option value="">2024</option>
+                                <option value="">2025</option>
+                                <option value="">2026</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="cvv">CVV</label>
+                        <input id="cvv" name="cvv" placeholder="415" type="text" required />
+                        <a class="cvv-info" href="#">What is CVV?</a>
+                    </div>
+
+                    <button class="btn-p">
+                        <i class="fa-solid fa-lock"></i> Make Payment
+                    </button>
+                </form>
+
+                <p class="footer-text">
+                    <i class="fa-solid fa-lock"></i>
+                    Your credit card infomration is encrypted
+                </p>
+            </div>
+        </div>
+    </div>
+
+ 
+
+   
+
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>

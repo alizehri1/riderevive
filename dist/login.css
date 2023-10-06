@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+  
+    background-color: #f8f9fa;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.logo{
+    height: 60px;
+    color: #e3e6f3;
+    position: relative;
+    top: 68px;
+    right: 70px;
+    
+}
+.container {
+  position: absolute;
+  top: 30%;
+  left: 14%;
+  font-size: 25px;
+}
+.container h1{
+    font-size: 50px;
+    line-height: 64px;
+    font-weight:700 ;
+    color: #088178;
+       }
+
+
+.container p {
+   position: absolute;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 32px;
+  width: 500px;
+  margin-top: 10px;
+}
+main {
+  width: 390px;
+  height: 360px;
+  background-color: white;
+  position: absolute;
+  top: 20%;
+  left: 56%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-style: none;
+}
+.box input {
+  width: 340px;
+  height: 40px;
+  margin: 10px;
+  margin-top: 18px;
+  margin-left: 25px;
+  padding: 5px 8px;
+  border-radius: 7px;
+  
+}
+.lognin-btn {
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 15px;
+  border-radius: 7px;
+  background-color: #088178;
+  border: none;
+  color: #e3e6f3;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 0 16px;
+  width: 332px;
+}
+.lognin-btn:hover {
+    background-color: white;
+    color: #000000;
+    border: 1px solid #088178 ;
+}
+.lognin-btn:hover a{
+    
+    color: #088178;
+
+}
+.lognin-btn a {
+  color: rgb(253, 252, 252);
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+.link2 {
+  text-align: center;
+  margin-top: 15px;
+  margin: 12px;
+}
+.link2 a {
+  text-decoration: none;
+  color:  #222222;
+  font-family: "Open Sans";
+}
+
+
+
+

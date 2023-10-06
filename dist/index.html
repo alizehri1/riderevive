@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Revive</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    
+     
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@1,300&family=Roboto:wght@500&display=swap" rel="stylesheet">
+ 
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/logo.jpg">
+    <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+<body>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="project-02pics/logo.jpg" class="logo" alt="" style="mix-blend-mode: darken;"></a>
+    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav nav-tabs mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active-s" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shop.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Account</a>
+          <ul class="dropdown-menu">
+           
+            <li><a class="dropdown-item" href="login.html">Login</a></li>
+            <li><a class="dropdown-item" href="signup.html">Signup</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item " href="dashboard.html">Dashbaord</a></li>
+          </ul>
+        </li>
+        </ul>
+<div class="cart">
+<img src="images/shopping-cart.jpg" class="icon"  id="icon"  alt="" onclick="func()" style="cursor:pointer">
+</div>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+   
+<!-- <section id="header">
+                <a href="#">
+                    <img src="project-02pics/logo.jpg" class="logo" style="mix-blend-mode: darken;">
+                </a>
+                
+               <h4 class="name">Ride Revive</h4>
+    
+                <div >
+                   <ul id="navbar">
+                    <li><a href="" class="active">home</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">contact</a></li>
+                    <li><i class="fa-solid fa-cart-shopping"></i></li>
+                   </ul>
+                </div>
+</section> -->
+
+<section id="hero">
+    <h4 class="name">Ride Revive</h4> 
+    <h2>Super Value Deals</h2>
+    <h2>On All Parts</h2>
+    <p>Revitalize Your Ride with Our Quality Autoparts.</p>
+    <button>Explore Now!</button>
+</section>
+
+<section id="search-box">
+ <div class="sbox">
+    <div class="searchbox">
+        <div class="upper">
+            <div class="slogo">
+                <i class="fa-solid fa-car" style="color: #ffffff;"></i>
+            </div> 
+            <div>
+                <h1 class="add-first"> It All Starts Here</h1>  
+                <p class="addon"> Search Parts For Your Car</p>
+            </div>
+        </div>
+        
+        <form class="input1">
+            <select id="cars" name="cars" >
+                <option value="select">--Select Make--</option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+                <option value="Lexus">Lexus</option>
+                <option value="Honda">Honda</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Ford">Ford</option>
+                <option value="Changan">Changan</option>
+                <option value="GMC">GMC</option>
+                <option value="Mg">Mg</option>
+                <option value="Suzuki">Suzuki</option>
+                <option value="Mitsibushi">Mitsibushi</option>
+              </select>
+            <input type="text" placeholder="--Select Model--  ">
+            <input type="text" placeholder="--Enter Year-- ">
+            <button class="search-items"><a> Search Items </a></button>
+        </form>
+        
+    </div>
+ </div>
+</section>
+<div class="top">
+    <h2><span class="top1">TOP</span>
+    CATEGORIES
+    </h2>
+</div>
+<section id="slider">
+    <ul id="autoWidth" class="cs-hidden">
+        <li class="item-a">
+            <div class="box1">
+                <div class="slide-img">
+                    <img src="project-02pics/steering.jpeg" alt="">
+                <div class="overlay">
+                    <a href="inner page 3.html" target="_blank" class="buy-btn">Buy Now</a>
+                </div>
+                </div>
+                <div class="detail">
+                    <div class="type">
+                        <a href="#">PROTOTIPO BLACK EDITION WHEEL</a>
+                        <span>steering wheel</span>
+                    </div>
+                    <div class="price">
+                        <a href="">73.99$</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="item-b">
+            <div class="box1">
+                <div class="slide-img">
+                    <img src="project-02pics/alloy.jpeg" alt="">
+                <div class="overlay">
+                    <a href="inner page 2.html" target="_blank"  class="buy-btn">Buy Now</a>
+                </div>
+                </div>
+                <div class="detail">
+                    <div class="type">
+                        <a href="#">Alloy Wheel / Rim TP </a>
+                        <span>202 17 Inches X 7.5 Inches</span>
+                    </div>
+                    <div class="price">
+                        <a href="">213.99$</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="item-c">
+            <div class="box1">
+                <div class="slide-img">
+                    <img src="project-02pics/tyre.jpeg" alt="">
+                <div class="overlay">
+                    <a href="inner page 1.html" target="_blank" class="buy-btn">Buy Now</a>
+                </div>
+                </div>
+                <div class="detail">
+                    <div class="type">
+                        <a href="#">Bridgestone Alenza AL01 </a>
+                        <span>285/50 R20s</span>
+                    </div>
+                    <div class="price">
+                        <a href="">203.99$</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="item-d">
+            <div class="box1">
+                <div class="slide-img">
+                    <img src="project-02pics/seats.jpeg" alt="">
+                <div class="overlay">
+                    <a href="inner page 4.html" target="_blank" class="buy-btn">Buy Now</a>
+                </div>
+                </div>
+                <div class="detail">
+                    <div class="type">
+                        <a href="#">MOMO CAR SEAT FAMILY PACK</a>
+                        <span>5 SEATS</span>
+                    </div>
+                    <div class="price">
+                        <a href="">423.99$</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div class="shop-button">
+        <button class="shop-btn" ><a href="shop.html"> Find More </a></button>
+    </div>
+</section>
+<section id="upcoming-section">
+    <div class="top">
+        <h2><span class="top1">TOP</span>
+        SELLERS
+        </h2>
+        <section id="slider">
+    
+            <ul id="autoWidth" class="cs-hidden">
+                <li class="item-a">
+                    <div class="box1">
+                        <div class="slide-img">
+                            <img src="project-02pics/freshner.jpg" alt="">
+                        <div class="overlay">
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                        </div>
+                        <div class="detail">
+                            <div class="type">
+                                <a href="#">Arm & Hammer Car Air Freshener</a>
+                                <span>250ml</span>
+                            </div>
+                            <div class="price">
+                                <a href="">3.49$</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-b">
+                    <div class="box1">
+                        <div class="slide-img">
+                            <img src="project-02pics/7cf.jpg" alt="" style="mix-blend-mode: darken;">
+                        <div class="overlay">
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                        </div>
+                        <div class="detail">
+                            <div class="type">
+                                <a href="#">7CF LEATHER & TYRE WAX </a>
+                                <span>450ml</span>
+                            </div>
+                            <div class="price">
+                                <a href="">3.99$</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-c">
+                    <div class="box1">
+                        <div class="slide-img">
+                            <img src="project-02pics/floormats.jpg" alt="">
+                        <div class="overlay">
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                        </div>
+                        <div class="detail">
+                            <div class="type">
+                                <a href="#">AutoCraft Car & SUV Floor Mat</a>
+                                <span>4 Piece </span>
+                            </div>
+                            <div class="price">
+                                <a href="">11.99$</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-d">
+                    <div class="box1">
+                        <div class="slide-img">
+                            <img src="project-02pics/cover .jpg" alt="">
+                        <div class="overlay">
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                        </div>
+                        <div class="detail">
+                            <div class="type">
+                                <a href="#">AutoCraft Car Cover, Grey</a>
+                                <span>15' 1"-16' 8"</span>
+                            </div>
+                            <div class="price">
+                                <a href="">43.99$</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+              </ul>
+        </section>
+    </div>
+    <div class="shop-button">
+        <button class="shop-btn" ><a href="shop.html"> Find More </a></button>
+    </div>
+</section>
+<section id="newly-section">
+    <div class="top">
+        <h2><span class="top1">RECENTLY ADDED</span>
+        PRODUCTS
+        </h2>
+        <section id="slider">
+    
+            <ul id="autoWidth" class="cs-hidden">
+                <li class="item-a">
+                    <div class="box1">
+                        <div class="slide-img">
+                            <img src="project-02pics/microfiber.jpg" alt="">
+                        <div class="overlay">
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                        </div>
+                        <div class="detail">
+                            <div class="type">
+                                <a href="#">Microfiber Wash Matt</a>
+                                <span>1 Piece</span>
+                            </div>
+                            <div class="price">
+                                <a href="">12.49$</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-b">
+                    <div class="box1">
+                        <div class="slide-img">
+                            <img src="project-02pics/shampoo.jpg" alt="">
+                        <div class="overlay">
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                        </div>
+                        <div class="detail">
+                            <div class="type">
+                                <a href="#">Meguias Ultimate Wash And Wax </a>
+                                <span>1420 ML</span>
+                            </div>
+                            <div class="price">
+                                <a href="">15.99$</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-c">
+                    <div class="box1">
+                        <div class="slide-img">
+                            <img src="project-02pics/sidemirror.jpg" alt="">
+                        <div class="overlay">
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                        </div>
+                        <div class="detail">
+                            <div class="type">
+                                <a href="#">
+                                    K-Source : Power Adjustment
+                                </a>
+                                <span>2 Pieces</span>
+                            </div>
+                            <div class="price">
+                                <a href="">23.99$</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-d">
+                    <div class="box1">
+                        <div class="slide-img">
+                            <img src="project-02pics/polisher.jpg" alt="">
+                        <div class="overlay">
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                        </div>
+                        <div class="detail">
+                            <div class="type">
+                                <a href="#">VRP Protectant: Vinyl + Rubber </a>
+                                <span>250ml</span>
+                            </div>
+                            <div class="price">
+                                <a href="">5.99$</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+              </ul>
+        </section>
+    </div>
+    <div class="shop-button">
+        <button class="shop-btn" ><a href="shop.html"> Find More </a></button>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="container0">
+        <div class="row">
+            <div class="footer-pic">
+                <img src="images/logo.jpg" class="image"
+                style="mix-blend-mode: darken;">
+                <h4 class="head-1">Ride Revive</h4>
+            </div>
+            <div class="footer-col">
+                <h4 class="h4">Quick Links</h4>
+                <ul class="ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="checkout.html">Contact</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="h4">Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="index.js"></script>
+<script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</html>

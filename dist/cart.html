@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RideRevive | Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="/images/logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/logo.jpg" class="logo" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-tabs mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Account</a>
+                        <ul class="dropdown-menu">
+
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="signup.html">Signup</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item active-s" href="dashboard.html">Dashbaord</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="cart">
+                    <img src="images/shopping-cart.png" class="icon" id="icon" onclick="func()" style="cursor: pointer;">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="main">
+<h3 class="text-start bold container">Shopping Cart<h3/>
+
+    <table class="container">
+        <tr class="header-row">
+          <th class="t-heading">Item</th>
+          <th class="t-heading">Price</th>
+          <th class="t-heading">Quantity</th>
+          <th class="t-heading">Total</th>
+        </tr>
+        <tr>
+          <td class="item-row"><div class="item"><img src="images/kit.jpg" alt="kit" class="cart-item">
+        <p>Stylish Bumper Car Kit</p>
+        </div></td>
+          <td class="cart-price">$270</td>
+          <td><div class="quantity">
+            <div class="min">-</div>
+            <div class="qua">3</div>
+            <div class="min">+</div>
+          </div></td>
+          <td  class="cart-price">$810</td>
+        </tr>
+        <tr>
+          <td class="item-row"><div class="item"><img src="images/fender.jpg" alt="kit" class="cart-item">
+            <p>Stylish Fender Car Kit</p>
+        </div></td>
+          <td class="cart-price">$369</td>
+          <td><div class="quantity">
+            <div class="min">-</div>
+            <div class="qua">1</div>
+            <div class="min">+</div>
+          </div></td>
+          <td  class="cart-price">$369</td>
+        </tr>
+        <tr>
+          <td class="item-row"><div class="item"><img src="images/battery.jpg" alt="kit" class="cart-item">
+            <p>Long Lasting Dry Car Battery</p>
+        </div></td>
+          <td class="cart-price">$250</td>
+          <td><div class="quantity">
+            <div class="min">-</div>
+            <div class="qua">2</div>
+            <div class="min">+</div>
+          </div></td>
+          <td  class="cart-price">$500</td>
+        </tr>
+      </table>
+
+      <div class="container sub">
+
+    <div class="total">
+        <h4>Sub Tax:</h4>
+        <h4 class="cart-price">$49/-</h4>
+    </div>
+    <div class="total">
+        <h4>Sub Total:</h4>
+        <h4 class="cart-price">$1718/-</h4>
+    </div>
+
+    <div class="checkout">
+        <a href="checkout.html"><button class="btn-opt-c active">Proceed To checkout</button></a>
+    </div>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <div class="container0">
+          <div class="row">
+              <div class="footer-pic">
+                  <img src="images/logo.jpg" class="image"
+                  style="mix-blend-mode: darken;">
+                  <h4 class="head-1">Ride Revive</h4>
+              </div>
+              <div class="footer-col">
+                  <h4 class="h4">Quick Links</h4>
+                  <ul class="ul">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Shop</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Account</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4 class="h4">Follow Us</h4>
+                  <div class="social-links">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>                    
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

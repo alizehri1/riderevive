@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RideRevive | Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<link rel="icon" type="image/x-icon" href="/images/logo.jpg">
+
+<link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+<link rel="stylesheet" href="shop.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/logo.jpg" class="logo" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-tabs mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active-s" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Account</a>
+                        <ul class="dropdown-menu">
+
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="signup.html">Signup</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item " href="dashboard.html">Dashbaord</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="cart">
+                    <img src="images/shopping-cart.png" class="icon" id="icon" onclick="func()" style="cursor: pointer;">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section>
+        <img src="images/bann.jpg" class="banner" alt="">
+    </section>
+
+    <h1 class="heading mx-5 container"><b><span class="green">Top </span>Categories</b></h1>
+    <hr class="container line">
+    <section class="container top-category ">
+       
+        <div class="card" style="width: 18rem;">
+            <img src="images/tyre-combo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Dunlop Tyres</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn-opt-s btn">Shop Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="images/tyre.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Single Tyre</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-opt-s">Shop Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="images/stearing.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Stearing Kit</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-opt-s">Shop Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="images/tools.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tools Pack</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-opt-s">Shop Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="images/rim.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Rim</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-opt-s">Shop Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="images/Seats.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Seats</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-opt-s">Shop Now</a>
+            </div>
+          </div>
+      
+    </section>
+
+
+
+    <h1 class="heading mx-5 container "><b><span class="green">Car </span>Care</b></h1>
+    <hr class="container line">
+    <section class="container top-category ">
+       
+        <div class="card" style="width: 18rem;">
+            <img src="images/matt.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Matt Cleaner</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn-opt-s btn">Shop Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="images/spray.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Spray Wash</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-opt-s">Shop Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="images/wash.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cleaner</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-opt-s">Shop Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="images/fiber.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tools Pack</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-opt-s">Shop Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="images/sponge.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Rim</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-opt-s">Shop Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="images/Seats.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Seat Covers</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-opt-s">Shop Now</a>
+            </div>
+          </div>
+      
+    </section>
+
+
+
+    <h1 class="heading mx-5 container "><b><span class="green">Body </span> Kits</b></h1>
+    <hr class="container line">
+    <section class="container top-category ">
+       
+        <div class="card" style="width: 18rem;">
+            <img src="images/kit.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">White Bumper Kit</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn-opt-s btn">Shop Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="images/kit1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Front Kit</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-opt-s">Shop Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="images/kit2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Fancy Kit</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-opt-s">Shop Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="images/kit4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kit Set</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-opt-s">Shop Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="images/kit5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">BMW Kit</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-opt-s">Shop Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="images/kit6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Fiberglass Kit</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-opt-s">Shop Now</a>
+            </div>
+          </div>
+      
+    </section>
+
+
+
+    <h1 class="heading mx-5 container "><b><span class="green">Lubricants</span> </b></h1>
+    <hr class="container line">
+    <section class="container top-category ">
+       
+        <div class="card" style="width: 18rem;">
+            <img src="images/oil1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Oil</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn-opt-s btn">Shop Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="images/oil2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Motor Oil</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-opt-s">Shop Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="images/oil3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Motor Softener</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-opt-s">Shop Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="images/oil4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Oil Pack</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-opt-s">Shop Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="images/oil5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Smooth Suspension</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-opt-s">Shop Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="images/oil6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Oil Grading</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-opt-s">Shop Now</a>
+            </div>
+          </div>
+      
+    </section>
+
+
+
+    <footer class="footer">
+      <div class="container0">
+          <div class="row">
+              <div class="footer-pic">
+                  <img src="images/logo.jpg" class="image"
+                  style="mix-blend-mode: darken;">
+                  <h4 class="head-1">Ride Revive</h4>
+              </div>
+              <div class="footer-col">
+                  <h4 class="h4">Quick Links</h4>
+                  <ul class="ul">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="shop.html">Shop</a></li>
+                      <li><a href="checkout.html">Contact</a></li>
+                      
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4 class="h4">Follow Us</h4>
+                  <div class="social-links">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>                    
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+   <script src="script.js">
+
+   </script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  
+</body>
+</html>
